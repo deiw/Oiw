@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    color: white;
+    background-color: black;
+}
+
+.logo {
+    height: 75px;
+    width: 125px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-list > li {
+    margin-left: 10px;
+}
+
+.header-list > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-list > li > a:hover {
+    color: yellow;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.content-container {
+    display: flex;
+}
+
+.content {
+    margin-left: 2%;
+    padding-right: 20%;
+}
+
+.dune-img {
+    width: 450px;
+    height: 700px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+}
