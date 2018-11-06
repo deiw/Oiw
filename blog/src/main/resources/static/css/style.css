@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 2% 15%;
+}
+
+.add-article-button {
+    float: right;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.article-preview {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.date {
+    font-style: italic;
+    font-size: small;
+    color: gray;
+}
+
+.detail-date {
+    text-align: right;
+    font-size: medium;
+    margin-top: 2%;
+}
+
+.center-form {
+    margin: auto;
+    width: 50%;
+}

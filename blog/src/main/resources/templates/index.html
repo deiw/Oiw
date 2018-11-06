@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Blog</title>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="header">
+    DAWID MAJORCZYK BLOG
+</header>
+<div class="container">
+    <form th:action="@{/articleform}" method="get">
+        <input class="add-article-button" type="submit" value="Add new article"/>
+    </form>
+    <br/>
+    <section>
+        <section class="article-preview" th:each="article:${articles}">
+            <h2 th:text="${article.title}">title</h2>
+            <p class="date" th:text="Created + '  ' + ${{article.date}}">15.04.2014 4.04</p>
+            <a th:href="@{'/article/' + ${article.title}}">Read Article</a>
+        </section>
+    </section>
+</div>
+</body>
+</html>

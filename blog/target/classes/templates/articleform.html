@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Article Form</title>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="center-form">
+    <form th:method="post" th:action="@{/article}" th:object="${rawArticle}">
+        <h2>Title</h2>
+        <input type="text" th:field="*{title}" placeholder="Enter title"/>
+        <p th:errors="*{title}"></p>
+        <h2>Content</h2>
+        <textarea th:field="*{content}" placeholder="Enter content" required="required" rows="20" cols="70"></textarea>
+        <p th:errors="*{content}"></p><br/>
+        <input type="submit" value="Create"/>
+    </form>
+</div>
+</body>
+</html>
